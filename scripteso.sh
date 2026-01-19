@@ -28,4 +28,10 @@ echo "4eso$letra"
 done
 }
 4eso
+alumnos() {
+for numero in {1..30}; do
+echo "alumnos$1_$numero"
+done
+}
+alumnos "1eso"
 
