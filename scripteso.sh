@@ -34,4 +34,15 @@ echo "alumnos$1_$numero"
 done
 }
 alumnos "1eso"
+niveles() {
+#Definir el array
+niveles=("1eso" "2eso" "3eso" "4eso")
 
+#for en la lista de cadenas de caracteres
+for nivel in "${niveles[@]}; do
+	echo "nivel: $nivel"
+	alumnos "$nivel"
+done
+]
+
+niveles
