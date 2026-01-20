@@ -33,16 +33,14 @@ for numero in {1..30}; do
 echo "alumnos$1_$numero"
 done
 }
-alumnos "1eso"
-niveles() {
+niveles_1eso() {
 #Definir el array
-niveles=("1eso" "2eso" "3eso" "4eso")
+niveles=("1esoA" "1esoB" "1esoC" "1esoD")
 
 #for en la lista de cadenas de caracteres
-for nivel in "${niveles[@]}; do
-	echo "nivel: $nivel"
+for nivel in "${niveles[@]}"; do
+#	echo "nivel: $nivel"
 	alumnos "$nivel"
 done
-]
-
-niveles
+}
+niveles_1eso
